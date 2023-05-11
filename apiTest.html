@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        function getMovieData(sortCondition = 'download_count') {
+
+            // 무료영화 API를 제공하는 서버주소: 
+            // http://yts.mx/api
+
+            fetch(`http://apis.data.go.kr/1400377/mtweather/mountListSearch?ServiceKey=5IbnUN%2FNAP5rYLQ9UcG5fjU3yoQQyCeagSv%2FmkPaqVFb7k7dWEjunyosefC0u1ENQ3NOURapdeXeYCQWCF%2BsPw%3D%3D&_type=json&localArea=02`)
+               .then(res => res.json())
+                .then(result => {
+                    //전체
+                    const array = result.response.body.items.item;
+                    array.forEach(d => console.log(d))
+                    // console.log(result.response.body.items.item[0]);
+            
+                });
+        }
+
+        getMovieData();
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- function getMovieData(sortCondition = 'download_count') {
+
+    // 무료영화 API를 제공하는 서버주소: 
+    // http://yts.mx/api
+
+    fetch(`https://yts.mx/api/v2/list_movies.json?limit=20&page=1&sort_by=${sortCondition}`)
+        .then(res => res.json())
+        .then(result => {
+            // 첫번째 영화의 제목 구하기
+            console.log(result.data.movies[0].title);
+            // 두번째 영화의 큰 표지이미지 주소 구하기
+            console.log(result.data.movies[1].large_cover_image);
+
+            makeMovieListDOM(result.data.movies);
+        });
+} -->
