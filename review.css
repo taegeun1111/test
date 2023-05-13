@@ -26,8 +26,9 @@
 }
 
 .review-main-title {
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 3px;
 }
 
 /* 공지 숨기기 */
@@ -49,6 +50,14 @@
     border: 1px solid gray;
 }
 
+.hide-admin-check{
+    background-color: rgb(100, 100, 100);
+}
+#choice{
+    width: 40px;
+    margin-left: 5px;
+
+}
 /* 주제, 작성글 영역 정하기 */
 .division-boardNo,
 .board-boardNo {
