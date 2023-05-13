@@ -16,33 +16,69 @@
 
 /* main-img 영역 */
 .main-wrapper {
-    background-image: url(jpg/main-img.jpg);
-    background-size: 100%;
-    height: 750px;
-    background-repeat: no-repeat;
-    background-position: 0px -800px;
-
-    /* text 영역 */
+    /* width: 85%; */
+    margin: 80px auto 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    flex-direction: column;
+    height: 500px;
 
 }
 
-.main-title {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 5px;
+/* main-text */
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 420px;
+    background-color: rgb(240, 240, 240);
+    padding: 40px 70px;
+}
+
+.main-img {
+    width: 70%;
+    background-image: url(jpg/main-img.jpg);
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    background-position: 0 -500px;
+}
+
+.main-text .logo img {
+    height: 15px;
+}
+
+.main-title-wrapper {
+    height: 130px;
+}
+
+.main-title-wrapper a {
+    padding: 5px 15px;
+    background-color: #4f6826;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
     font-weight: 300;
+}
+
+.gobtn img {
+    margin-left: 5px;
+    width: 6px;
+}
+
+.main-title {
+
+    text-align: left;
+    font-weight: 300;
+    margin: 0 0 10px;
+
 }
 
 .sub-title {
     font-size: 17px;
-    margin: 0;
     font-weight: 400;
+    margin: 0;
 }
+
+
 
 /* 오늘의 날씨 영역 */
 .sec1-container {
@@ -64,6 +100,7 @@
     font-size: 30px;
     margin: 0;
     padding: 40px 0 2px;
+    font-weight: 400;
 }
 
 .sec1-sub,
@@ -72,24 +109,71 @@
     font-weight: 400;
     font-size: 15px;
     margin: 0;
+    font-weight: 300;
 }
 
 .weather-wrap {
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 /* 오늘의 날씨 박스 영역 공통 부분 */
 .weather-today-wrapper,
-.weather-detail-wrapper {
+.weather-mountain-wrapper {
     width: 48%;
     background-color: rgb(240, 240, 240);
     margin: 20px 10px 0px;
-    height: 250px;
     border-radius: 10px;
-    /* box-shadow: 2px 4px 4px 3px rgb(220, 220, 220); */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
+.weather-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.region {
+    background-color: #4f6826;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.weather-icon img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.weather-now {
+    font-size: 60px;
+}
+
+.weather-detail-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.weather-detail {
+    width: 120px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+}
+.etc{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+}
 /* 오늘의 산, 막걸리 영역 */
 .sec2-container {
     background-color: #fbf4e6;
@@ -106,15 +190,17 @@
     position: absolute;
     transform: translate(0%, -50%);
 }
-.less{
+
+.less {
     top: 50%;
     left: -7%;
 }
 
-.then{
+.then {
     top: 50%;
     right: -7%;
 }
+
 .today-mountain-wrapper {
     width: 900px;
     height: 300px;
@@ -127,25 +213,31 @@
 
 
 }
-.mountain-main-warpper{
+
+.mountain-main-warpper {
     display: flex;
     padding: 10px;
 }
+
 .today-mountain-img {
     height: 280px;
 }
-.today-mountain{
+
+.today-mountain {
     padding: 15px 40px;
     text-align: left;
 }
-.today-mountain-title{
+
+.today-mountain-title {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 5px;
 }
-.today-mountain-content{
+
+.today-mountain-content {
     height: 180px;
 }
-.today-mountain-price{
+
+.today-mountain-price {
     font-size: 19px;
 }

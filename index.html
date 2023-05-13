@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
+<!-- <img src="jpg/than.png" alt=""> -->
 
 <body>
     <div class="index-container">
@@ -16,10 +17,20 @@
             header test
         </header>
         <div class="main-wrapper">
-            <h1 class="main-title">함께하는 등산이<br>좋은등산이 될 수 있도록</h1>
-            <h2 class="sub-title">Mountain Climbing Together</h2>
+            <div class="main-text">
+                <div class="logo"><img src="jpg/logo.png" alt=""></div>
+                <div class="main-title-wrapper">
+                    <h1 class="main-title">함께하는 등산이<br>좋은등산이 될 수 있도록</h1>
+                    <a href="#" class="gobtn">
+                        산행 신청하러 가기
+                        <img src="jpg/than(white).png" alt="">
+                    </a>
+                </div>
+                <h2 class="sub-title">Mountain Climbing Together</h2>
+            </div>
+            <div class="main-img">
+            </div>
         </div>
-
         <!-- 오늘의 날씨 -->
         <section class="sec1-container">
             <div class="sec1-main-wrapper">
@@ -29,16 +40,32 @@
 
             <div class="weather-wrap">
                 <div class="weather-today-wrapper">
-                    <div class="region">서울특별시</div>
+                    <a class="region">서울특별시</a>
                     <div class="weather-main">
-                        <div class="weather-icon"></div>
+                        <div class="weather-icon"><img src="jpg/sunny.png" alt=""></div>
                         <div class="weather-now">24.0°</div>
                     </div>
+                    <div class="weather-detail-wrapper">
+                        <div class="weather-detail">바람 : 3</div>
+                        <div class="weather-detail">현재습도 : 30°</div>
+                        <div class="weather-detail">구름 : 0m/s</div>
+                    </div>
+                    <div class="etc">※현재 온도는 기상청 1시간 기준으로 갱신됩니다.</div>
                 </div>
-                <div class="weather-detail-wrapper">
-                    <div class="weather-detail1">바람 : 3</div>
-                    <div class="weather-detail1">현재습도 : 30°</div>
-                    <div class="weather-detail1">구름 : 0m/s</div>
+                <div class="weather-mountain-wrapper">
+                    <a class="region">북한산</a>
+                    <div class="weather-main">
+                        <div class="weather-icon"><img src="jpg/sunny.png" alt=""></div>
+                        <div class="weather-now">24.0°</div>
+
+                    </div>
+                    <div class="weather-detail-wrapper">
+                        <div class="weather-detail">바람 : 3</div>
+                        <div class="weather-detail">현재습도 : 30°</div>
+                        <div class="weather-detail">구름 : 0m/s</div>
+
+                    </div>
+                    <div class="etc">※현재 온도는 기상청 1시간 기준으로 갱신됩니다.</div>
                 </div>
             </div>
         </section>

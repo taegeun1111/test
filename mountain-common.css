@@ -2,12 +2,15 @@
     국문 : Noto Sans KR
     Gothic1 - font weight 400이하 사용
     영문 : Urbanist
-    Montserrat - font weight 600이하 사용
+    Urbanist - font weight 600이하 사용
     폰트 사이즈는 컨텐츠에 맞춰 적용
     */
 
 * {
-    font-family: 'Montserrat', 'Noto Sans KR';
+    font-family: 'Urbanist', 'Noto Sans KR';
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
 }
 
 /* reset CSS */
@@ -17,6 +20,7 @@
 
 body {
     font-size: 15px;
+    font-weight: 300;
     font-family: 'Urbanist', 'Noto Sans KR';
     margin: 0;
     padding: 0;
