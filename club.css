@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+.club-container {
+    width: 1200px;
+    margin: 120px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* icon 영역 */
+.icon-detail {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.5px white solid;
+    padding-bottom: 10px;
+}
+.mountain-sec{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.mountain-sec img{
+    margin-right: 10px;
+}
+.mountain-icon {
+    width: 20px;
+}
+
+.people-icon {
+    width: 20px;
+}
+
+.calendar-icon {
+    width: 18px;
+}
+
+.location-icon {
+    width: 15px;
+}
+
+
+/* club list */
+.club-title{
+    font-size: 25px;
+    color: #d5f462;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.club-list-wrapper {
+    width: 270px;
+    background-color: #1e1d21;
+    color: white;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 1px rgba(170, 170, 170, 1);
+}
+
+.club-content{
+    margin-top: 10px;
+    font-size: 18px;
+    height: 150px;
+}
+
+/* 현재 인원 */
+.now-count-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.now-text{
+    font-size: 14px;
+}
+.now-count{
+    display: flex;
+    font-size: 35px;
+    align-items: baseline;
+    margin-top: 3px;
+}
+#lower-size{
+    margin-left: 2px;
+    font-size: 16px;
+}
