@@ -15,7 +15,7 @@ body{
 .icon-detail {
     display: flex;
     flex-direction: column;
-    border-bottom: 0.5px white solid;
+    border-bottom: 1px rgb(150, 150, 150) solid;
     padding-bottom: 10px;
 }
 .mountain-sec{
@@ -40,7 +40,7 @@ body{
 }
 
 .location-icon {
-    width: 15px;
+    width: 14px;
 }
 
 
@@ -60,6 +60,14 @@ body{
     padding: 25px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 1px rgba(170, 170, 170, 1);
+    cursor: pointer;
+}
+
+.club-list-wrapper:active {
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top: 1px;
+    left:  1px;
 }
 
 .club-content{
@@ -77,12 +85,14 @@ body{
     font-size: 14px;
 }
 .now-count{
+    font-family: 'Noto Sans KR';
     display: flex;
     font-size: 35px;
     align-items: baseline;
-    margin-top: 3px;
+    font-weight: 300;
+    letter-spacing: 3px;
 }
 #lower-size{
-    margin-left: 2px;
+    /* margin-left: 3px; */
     font-size: 16px;
 }
