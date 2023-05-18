@@ -3,14 +3,18 @@
 body{
     background-color: rgb(240, 240, 240);
 }
+
+
 .club-container {
-    width: 1200px;
+    width: 1050px;
     margin: 120px auto 0;
+
+}
+.club-warpper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 /* icon 영역 */
 .icon-detail {
     display: flex;
@@ -53,10 +57,10 @@ body{
 }
 
 .club-list-wrapper {
-    width: 270px;
+    width: 26.5%;
     background-color: #1e1d21;
     color: white;
-    margin: 15px;
+    margin: 10px;
     padding: 25px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 1px rgba(170, 170, 170, 1);
@@ -95,4 +99,88 @@ body{
 #lower-size{
     /* margin-left: 3px; */
     font-size: 16px;
+}
+
+/* 페이지네이션 */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    /* background-color: rgb(250, 250, 250); */
+    /* height: 150px; */
+    /* border-bottom: 1px solid #000; */
+}
+.pagination-wrapper{
+    display: flex;
+    text-align: center;
+    padding: 0;
+}
+
+/* 이전, 다음 버튼 */
+.less-icon, .than-icon{
+    width: 20px;
+    height: 20px;
+}
+.prev-btn, .next-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+}
+
+.prev-btn{
+    /* padding-right: 6px; */
+    margin-right: 13px;
+}
+.next-btn{
+    margin-left: 13px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 2px;
+
+}
+
+.pagination a {
+    text-align: center;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 글쓰기 버튼 */
+.write-btn {
+    width: 10%;
+    margin: 0 10px;
+    border: none;
+    padding: 7px 20px;
+    font-weight: 300;
+    margin-top: 10px;
+
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #b7d15a;
+    color: #1e1d21;
+    font-weight: 400;
+    
+}
+
+.write-btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.write-btn:hover {
+    background-color: #b7d15a;
+    color: white;
 }
