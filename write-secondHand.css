@@ -41,7 +41,7 @@
 /* 타이틀 콘텐츠 영역 */
 #title,
 #content {
-    width: 650px;
+    width: 550px;
     margin: 0 auto;
     resize: none;
     margin-bottom: 10px;
@@ -54,7 +54,7 @@
 }
 
 #content {
-    height: 500px;
+    height: 400px;
     border-radius: 7px;
 }
 

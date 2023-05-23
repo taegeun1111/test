@@ -100,7 +100,13 @@ body {
     padding: 20px 0 40px;
     border-bottom: 1px solid rgb(200, 200, 200);
     font-size: 17px;
+    
+}
 
+.issue-content{
+    /* height: 200px; */
+    /* margin-bottom: 100px; */
+    min-height: 200px;
 }
 
 /* 댓글 영역 */

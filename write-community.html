@@ -8,9 +8,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="mountain-common.css">
     <link rel="stylesheet" href="write-community.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 
-<body>
+<body id="body-color">
+    <header class="header-container">
+        <div class="header-wrapper">
+            <ul class="category-wrapper">
+                <li><a href="" class="">추천 정보</a></li>
+                <li><a href="" class="">커뮤니티</a></li>
+                <li><a href="" class="">모임</a></li>
+                <li><a href="" class="">중고거래</a></li>
+                <li><a href="" class="">스탬프</a></li>
+            </ul>
+            <img src="jpg/logo(white).png" alt="" class="logo">
+
+            <ul class="login-wrapper">
+                <li><a href="" class="signUp-btn">Sign up</a></li>
+                <li><a href="" class="signIn-btn">Sign in</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-img"></div>
     <form action="" method="post">
         <div class="write-container">
             <div class="write-wrapper">
@@ -23,10 +42,10 @@
                     </select>
                     <textarea name="title" id="title" cols="30" rows="10" placeholder="제목을 입력해주세요"></textarea>
                     <textarea name="content" id="content" cols="30" rows="10" placeholder="내용을 입력해주세요"></textarea>
-                    
+
                     <div class="button-wrapper">
                         <button class="submit-btn">작성하기</button>
-                        <button class="close-btn">취소하기</button>
+                        <a href="/club/list" class="close-btn">취소하기</a>
                     </div>
                 </div>
 

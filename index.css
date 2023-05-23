@@ -1,15 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.index-container {
-    background-color: rgb(240, 240, 240);
-    /* background-color: #1e1d21; */
+
+.col-4, .col-8{
+    height: 500px;
+    padding: 0 !important;
 }
+
+
+.index-container {
+    background-color: #fcf9f2;
+}
+/* 캐러셀 영역 */
+.carousel-inner{
+    height: 500px !important;
+    
+}
+
+.d-block{
+    width: 100% !important;
+    height: auto;
+    background-size: cover;
+    display: inline-block;
+}
+
+/* 버튼 위치 */
+.carousel-control-prev{
+    left: 550px !important;
+}
+.carousel-control-next{
+    right: -80px !important;
+}
+
 
 /* main-img 영역 */
 .main-wrapper {
-    /* width: 85%; */
+    width: 40%;
     margin: 80px auto 0;
     display: flex;
+    align-items: flex-end; /* 수정: 중앙 정렬 대신 아래로 정렬 */
     height: 500px;
 
 }
@@ -19,21 +47,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30%;
-    height: 420px;
+    width: 100%;
+    height: 100%; /* 수정: 부모 요소의 높이를 상속받음 */
     /* background-color: rgb(240, 240, 240); */
     background-color: #1e1d21;
     color: white;
     padding: 40px 70px;
 }
 
-.main-img {
-    width: 70%;
-    background-image: url(jpg/main-img.jpg);
-    background-size: 100%;
-    /* background-repeat: no-repeat; */
-    background-position: 0 -500px;
-}
 
 .main-text .main-logo img {
     height: 15px;
@@ -70,14 +91,18 @@
     margin: 0 0 10px;
 
 }
-
+.img1{
+background-position-y: -350px !important;
+}
 .sub-title {
     font-size: 17px;
     font-weight: 400;
     margin: 0;
 }
-
-
+.col-8 .img2, .col-8 .img3{
+    height: 500px !important;
+}
+/* 각자 배경 포지션 */
 
 /* 2번째 영역 전체 */
 .second-warpper{
@@ -93,6 +118,7 @@
     display: flex;
     flex-direction: column;
     margin: 25px auto;
+
 }
 
 
@@ -116,8 +142,9 @@
 .weather-mountain-wrapper {
     width: 430px;
     height: 250px;
-    background-color: #1e1d21;
-    color: white;
+    /* background-color: #1e1d21; */
+    background-color: rgb(255, 255, 255);
+    color: black;
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -150,6 +177,7 @@
 
 .weather-now {
     font-size: 60px;
+    color: black;
 }
 
 .weather-detail-wrapper {
@@ -175,7 +203,8 @@
 
 /* 오늘의 산, 막걸리 영역 */
 .sec2-container {
-    background-color: #1e1d21;
+    /* background-color: #1e1d21; */
+    background-color: rgb(255, 255, 255);
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -186,7 +215,7 @@
 .today-mountain-wrapper {
     height: 300px;
     /* display: flex; */
-    color: white;
+    color: black;
     margin: 20px auto;
     position: relative;
     /* align-items: start; */
@@ -217,6 +246,7 @@
 }
 
 .today-mountain-content {
+
     width: 80%;
     margin: 0 auto 15px;
     font-size: 16px;
@@ -248,5 +278,5 @@
 
 /* sec3 영역 */
 .sec3-container{
-    background-color: white;
+    background-color: #1e1d21;
 }

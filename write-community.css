@@ -1,21 +1,17 @@
-.write-container {
+#body-color {
     /* background-color: black; */
-    /* background-color: rgb(240, 240, 240); */
-    background-color: #1e1d21;
-    height: 100vh;
+    background-color: rgb(240, 240, 240);
+    /* background-color: #1e1d21; */
+    /* height: 100vh; */
 }
 
 .title-wrapper {
     display: flex;
     flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    margin: 120px auto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    /* box-shadow: 3px 3px 5px 1px rgba(200, 200, 200, 0.5); */
 }
 
 .review-main-title {
@@ -36,7 +32,8 @@
 /* 타이틀 콘텐츠 영역 */
 #title,
 #content {
-    width: 650px;
+    /* width: 550px; */
+    width: 100%;
     margin: 0 auto;
     resize: none;
     margin-bottom: 10px;
@@ -44,26 +41,26 @@
 }
 
 #title {
-    height: 20px;
+    height: 45px;
     border-radius: 5px;
 }
 
 #content {
-    height: 500px;
+    min-height: 480px;
     border-radius: 7px;
 }
 
 #categorySelect {
-    padding: 10px 5px;
-    margin-bottom: 10px;
+    padding: 5px 5px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 
 /* 작성, 취소 버튼 */
 .write-wrapper {
-    width: 1000px;
-    background-color: aqua;
+    width: 590px;
+    /* background-color: aqua; */
     margin: 0 auto;
 }
 
@@ -71,13 +68,17 @@
     display: flex;
     flex-direction: column;
 }
-.button-wrapper :nth-child(1){
+
+.button-wrapper :nth-child(1) {
     margin-bottom: 7px;
 }
+
+
 .submit-btn,
 .close-btn {
-    height: 50px;
-    font-size: 17px;
+    padding: 5px 0;
+    width: 100%;
+    font-size: 15px;
     font-weight: 200;
     /* background-color: black; */
     background-color: rgb(240, 240, 240);
@@ -86,10 +87,15 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: 400;
+    color: black;
+}
+
+.close-btn{
+    text-align: center;
 }
 
 .submit-btn:hover,
-.close-btn:hover{
+.close-btn:hover {
     background-color: #d5f462;
     color: black;
 

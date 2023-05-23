@@ -24,9 +24,30 @@
     margin-bottom: 10px;
 }
 
-.select-wrapper{
+.select-wrapper,
+.text-wrapper {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+/* input버튼 공통 영역 */
+.type-wrapper,
+.deadline-wrapper,
+.area-wrapper,
+.count-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* input 설명글 공통영역 */
+.type-title,
+.deadline-title,
+.area-title,
+.count-title {
+    margin-right: 5px;
+    margin: 0px 5px;
 }
 
 /* 전체 border 공통영역 */
@@ -34,15 +55,17 @@
 #content,
 #clubRecruitType,
 #clubRecruitDeadline,
+#clubArea,
+#clubRecruitCount,
 .submit-btn,
 .close-btn {
-    border: 0.5px solid rgb(230, 230, 230);
+    border: 0.5px solid rgb(230, 230, 230) !important;
 }
 
 /* 타이틀 콘텐츠 영역 */
 #title,
 #content {
-    width: 650px;
+    width: 550px;
     margin: 0 auto;
     resize: none;
     margin-bottom: 10px;
@@ -50,29 +73,40 @@
 }
 
 #title {
-    height: 20px;
+    height: 45px;
     border-radius: 5px;
 }
 
 #content {
-    height: 500px;
+    height: 400px;
     border-radius: 7px;
 }
 
+/* input태그 넓이 */
 #clubRecruitType,
-#clubRecruitDeadline {
-    padding: 10px 5px;
-    margin-bottom: 10px;
+#clubRecruitDeadline,
+#clubArea,
+#clubRecruitCount {
+    padding: 5px 5px;
     border-radius: 5px;
+    margin-right: 10px;
 }
-#clubRecruitDeadline{
-    width: 30%;
-    margin-left: 10px;
+
+#clubRecruitType,
+#clubRecruitCount {
+    width: 120px;
 }
-.club-waaa{
+
+#clubArea,
+#clubRecruitDeadline {
+    width: 200px;
+}
+
+.club-waaa {
     display: flex;
     flex-direction: column;
 }
+
 /* 작성, 취소 버튼 */
 .write-wrapper {
     width: 1000px;
@@ -86,9 +120,11 @@
     display: flex;
     flex-direction: column;
 }
-.button-wrapper :nth-child(1){
+
+.button-wrapper :nth-child(1) {
     margin-bottom: 7px;
 }
+
 .submit-btn,
 .close-btn {
     height: 50px;
@@ -104,7 +140,7 @@
 }
 
 .submit-btn:hover,
-.close-btn:hover{
+.close-btn:hover {
     background-color: #d5f462;
     color: black;
 

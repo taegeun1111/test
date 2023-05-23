@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mountain-common.css">
-    <link rel="stylesheet" href="write-issue.css">
+    <link rel="stylesheet" href="write-club.css">
 </head>
 <div class="title-wrapper">
 
-
+    3
 </div>
 
 <body>
@@ -20,13 +20,25 @@
             <div class="write-wrapper">
                 <div class="title-wrapper">
                     <div class="review-main-title">게시물 작성</div>
-                    <div class="select-wrapper">
+                    <section class="select-wrapper">
+                        <p class="select-title">모임종류</p>
                         <select name="" id="clubRecruitType">
                             <option value="정기모임">정기모임</option>
                             <option value="소모임">소모임</option>
                         </select>
-                        <input type="datetime-local" id="clubRecruitDeadline" name="clubRecruitDeadline">
-                    </div>
+                        <div class="deadline-wrapper">
+                            <p class="deadline-title">마감일자</p>
+                            <input type="datetime-local" id="clubRecruitDeadline" name="clubRecruitDeadline">
+                        </div>
+                        <div class="area-wrapper">
+                            <p class="area-title">모임 장소</p>
+                            <input type="type" id="clubArea" name="clubArea">
+                        </div>
+                        <div class="count-wrapper">
+                            <p class="count-title">마감일자</p>
+                            <input type="number" id="clubRecruitCount" name="clubRecruitCount">
+                        </div>
+                    </section>
                     <textarea name="title" id="title" cols="30" rows="10" placeholder="제목을 입력해주세요"></textarea>
                     <textarea name="content" id="content" cols="30" rows="10" placeholder="내용을 입력해주세요"></textarea>
 
